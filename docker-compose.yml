@@ -1,0 +1,20 @@
+version: '3.2'
+services:
+      conf:
+          image: igameproject-breakout:1.0
+          container_name: breakout
+          build:
+            context: .
+            dockerfile: Dockerfile 
+          ports:
+            - "80:80"
+            - "443:443"
+            - "1936:1936"
+          volumes:
+            - type: bind
+              source: ./apache-logs
+              target: /var/log/httpd
+            - type: bind
+              source: ./haproxy-logs
+              target: /var/log/haproxy
+          privileged: true  
