@@ -1,21 +1,22 @@
 # docker-assessment
 
-Purpose:
--------
+## Getting Started
 
-The aim of this project is to build an image containing a simple web application hosted on an Apache web server by integrating haproxy as reverse-proxy.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Prerequisites:
--------------
+## Prerequisites
 
-1- Docker and docker compose need to be installed on the test machine
-2- Delete the .placeholder files from the apache-logs and haproxy-logs folders
+Docker and docker compose need to be installed on the test machine
+Delete the .placeholder files from the apache-logs and haproxy-logs folders
 
-Steps to reproduce:
--------------------
+## Installing
 
-1- Move to the root directory of the project
-2- Build the image by running the following command:
-   docker-compose build
-2- Run the container by executing the next command:
-   docker-compose up -d
+Move to the root directory of the project
+Build the image by running the following command:
+``` 	
+docker-compose build
+```
+Run the container by executing the next command:
+```
+docker-compose up -d
+```
