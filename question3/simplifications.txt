@@ -1,0 +1,6 @@
+Dockerfile weaknesses and simplifications:
+=========================================
+
+1- A ServerName is not defined in the httpd conf file, we should enter either a host with a registered DNS name
+2- In a production environment we should define a <VirtualHost> since we may have different instances deployed on the same web server
+3- We should specify valid IP addresses in the haproxy.cfg file rather than using the range 127.X.Y.Z which refers to the localhost
