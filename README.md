@@ -1,4 +1,4 @@
-# docker-assessment
+# Docker assessment
 
 ## Getting Started
 
@@ -21,4 +21,16 @@ docker-compose build
 Run the container by executing the next command:
 ```
 docker-compose up -d
+```
+## Testing
+
+Test the application by launching the follwoing URL:
+```
+http://<machine_IPaddress>/Breakout/
+```
+You will perceive a redirection to the https protocol managed by the HAProxy on port 443
+
+Test the HAProxy Statistics Report by launching the URL:
+```
+http://<machine_IPaddress>:1936
 ```
